@@ -281,7 +281,7 @@ class Element extends Node
      *
      * @return array|null
      */
-    public function attributes(array $names = null): ?array
+    public function attributes(?array $names = null): ?array
     {
         if ( ! $this->node instanceof DOMElement) {
             return null;
@@ -368,7 +368,7 @@ class Element extends Node
      *
      * @return string|null
      */
-    public function __get(string $name): ?string
+    public function __get(?string $name): ?string
     {
         return $this->getAttribute($name);
     }
